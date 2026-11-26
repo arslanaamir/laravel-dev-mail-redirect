@@ -1,0 +1,41 @@
+{
+    "name": "arslanaamir/laravel-dev-mail-redirect",
+    "description": "Redirect every outgoing Laravel email to developer addresses while the application is under development.",
+    "type": "library",
+    "keywords": ["laravel", "mail", "email", "redirect", "development", "staging"],
+    "require": {
+        "php": "^8.0.2",
+        "illuminate/mail": "^9.0|^10.0|^11.0|^12.0|^13.0",
+        "illuminate/support": "^9.0|^10.0|^11.0|^12.0|^13.0",
+        "symfony/mime": "^6.0|^7.0|^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^7.0|^8.0|^9.0|^10.0|^11.0",
+        "phpunit/phpunit": "^9.5|^10.5|^11.0|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ArslanAamir\\DevMailRedirect\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ArslanAamir\\DevMailRedirect\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ArslanAamir\\DevMailRedirect\\DevMailRedirectServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
