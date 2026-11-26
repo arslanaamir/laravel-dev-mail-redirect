@@ -9,11 +9,10 @@ Send every outgoing email in a Laravel application to your own addresses while t
 
 ## Installation
 
-Add the GitHub repository to your project, then require the package:
+Require the package with Composer:
 
 ```bash
-composer config repositories.dev-mail-redirect vcs https://github.com/arslanaamir/laravel-dev-mail-redirect
-composer require arslanaamir/laravel-dev-mail-redirect:dev-main
+composer require arslanaamir/laravel-dev-mail-redirect
 ```
 
 To install from a local folder instead:
@@ -100,3 +99,7 @@ Before relying on the package in a project, send one test email with that projec
 composer install
 composer test
 ```
+
+## License
+
+Released under the [MIT License](LICENSE).

@@ -2,6 +2,7 @@
     "name": "arslanaamir/laravel-dev-mail-redirect",
     "description": "Redirect every outgoing Laravel email to developer addresses while the application is under development.",
     "type": "library",
+    "license": "MIT",
     "keywords": ["laravel", "mail", "email", "redirect", "development", "staging"],
     "require": {
         "php": "^8.0.2",
